@@ -1,4 +1,7 @@
 TouchGFX/target/TouchGFXHAL.o: ../TouchGFX/target/TouchGFXHAL.cpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp \
  ../TouchGFX/target/TouchGFXHAL.hpp \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/../../../Core/Inc/ST7789v.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal.h \
@@ -45,8 +48,6 @@ TouchGFX/target/TouchGFXHAL.o: ../TouchGFX/target/TouchGFXHAL.cpp \
  ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/button/ButtonController.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Bitmap.hpp \
@@ -67,6 +68,9 @@ TouchGFX/target/TouchGFXHAL.o: ../TouchGFX/target/TouchGFXHAL.cpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TextProvider.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TextureMapTypes.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/DebugPrinter.hpp
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp:
 ../TouchGFX/target/TouchGFXHAL.hpp:
 ../Drivers/STM32U5xx_HAL_Driver/Inc/../../../Core/Inc/ST7789v.h:
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal.h:
@@ -113,8 +117,6 @@ TouchGFX/target/TouchGFXHAL.o: ../TouchGFX/target/TouchGFXHAL.cpp \
 ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/button/ButtonController.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Bitmap.hpp:

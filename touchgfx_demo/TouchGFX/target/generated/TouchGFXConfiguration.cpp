@@ -16,6 +16,7 @@
 *
 ******************************************************************************
 */
+#include <touchgfx/hal/OSWrappers.hpp>
 /* USER CODE END Header */
 #include <texts/TypedTextDatabase.hpp>
 #include <fonts/ApplicationFontProvider.hpp>

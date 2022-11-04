@@ -7,7 +7,6 @@
 C_SRCS += \
 ../Core/Src/app_threadx.c \
 ../Core/Src/fmc.c \
-../Core/Src/main.c \
 ../Core/Src/stm32u5xx_hal_msp.c \
 ../Core/Src/stm32u5xx_hal_timebase_tim.c \
 ../Core/Src/stm32u5xx_it.c \
@@ -16,7 +15,8 @@ C_SRCS += \
 ../Core/Src/system_stm32u5xx.c 
 
 CPP_SRCS += \
-../Core/Src/ST7789v.cpp 
+../Core/Src/ST7789v.cpp \
+../Core/Src/main.cpp 
 
 S_UPPER_SRCS += \
 ../Core/Src/tx_initialize_low_level.S 
@@ -24,7 +24,6 @@ S_UPPER_SRCS += \
 C_DEPS += \
 ./Core/Src/app_threadx.d \
 ./Core/Src/fmc.d \
-./Core/Src/main.d \
 ./Core/Src/stm32u5xx_hal_msp.d \
 ./Core/Src/stm32u5xx_hal_timebase_tim.d \
 ./Core/Src/stm32u5xx_it.d \
@@ -49,7 +48,8 @@ S_UPPER_DEPS += \
 ./Core/Src/tx_initialize_low_level.d 
 
 CPP_DEPS += \
-./Core/Src/ST7789v.d 
+./Core/Src/ST7789v.d \
+./Core/Src/main.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -1,4 +1,4 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
+Core/Src/main.o: ../Core/Src/main.cpp ../Core/Inc/main.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal.h \
  ../Core/Inc/stm32u5xx_hal_conf.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_rcc.h \
@@ -53,7 +53,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/ST/threadx/common/inc/tx_api.h \
  ../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \
  ../Core/Inc/tx_user.h ../TouchGFX/App/app_touchgfx.h \
- ../Core/Inc/my_image.h
+ ../Core/Inc/my_image.h \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp
 ../Core/Inc/main.h:
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal.h:
 ../Core/Inc/stm32u5xx_hal_conf.h:
@@ -113,3 +116,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/tx_user.h:
 ../TouchGFX/App/app_touchgfx.h:
 ../Core/Inc/my_image.h:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp:

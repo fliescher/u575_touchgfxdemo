@@ -16,11 +16,13 @@
   *
   ******************************************************************************
   */
+#include <touchgfx/hal/OSWrappers.hpp>
 /* USER CODE END Header */
 
 #include <TouchGFXHAL.hpp>
 
 /* USER CODE BEGIN TouchGFXHAL.cpp */
+
 
 using namespace touchgfx;
 
@@ -90,7 +92,7 @@ void TouchGFXHAL::flushFrameBuffer(const touchgfx::Rect& rect)
     // defined in TouchGFXGeneratedHAL.cpp
 
     TouchGFXGeneratedHAL::flushFrameBuffer(rect);
-}
+ }
 
 void TouchGFXHAL::copyFrameBufferBlockToLCD(const Rect& rect)
 {

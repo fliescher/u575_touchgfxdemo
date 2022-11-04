@@ -1,8 +1,9 @@
 TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../TouchGFX/target/generated/TouchGFXConfiguration.cpp \
- ../TouchGFX/generated/texts/include/texts/TypedTextDatabase.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp \
+ ../TouchGFX/generated/texts/include/texts/TypedTextDatabase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Unicode.hpp \
@@ -125,9 +126,10 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/../../../Core/Inc/fmc.h \
  ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp \
  ../TouchGFX/target/STM32TouchController.hpp
-../TouchGFX/generated/texts/include/texts/TypedTextDatabase.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp:
+../TouchGFX/generated/texts/include/texts/TypedTextDatabase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Unicode.hpp:
