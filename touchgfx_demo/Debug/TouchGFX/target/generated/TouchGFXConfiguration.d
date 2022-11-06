@@ -32,7 +32,8 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/BlockTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/WipeTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/button/ButtonController.hpp \
@@ -42,10 +43,9 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Atomic.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FrameBufferAllocator.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -75,6 +75,7 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Shape.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
  ../TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
  ../TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp \
@@ -158,7 +159,8 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/BlockTransition.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/WipeTransition.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/button/ButtonController.hpp:
@@ -168,10 +170,9 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Atomic.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FrameBufferAllocator.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
 ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
@@ -201,6 +202,7 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Shape.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
 ../TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:
 ../TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp:

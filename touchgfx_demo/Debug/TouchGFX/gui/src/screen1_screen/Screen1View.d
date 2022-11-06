@@ -59,7 +59,8 @@ TouchGFX/gui/src/screen1_screen/Screen1View.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Shape.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp
 ../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
 ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
@@ -120,3 +121,4 @@ TouchGFX/gui/src/screen1_screen/Screen1View.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Shape.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:

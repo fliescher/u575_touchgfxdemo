@@ -43,8 +43,8 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:34:7:virtual touchgfx::AbstractPainterRGB565::~AbstractPainterRGB565()	16	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<Screen1Presenter>::~View()	16	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<Screen1Presenter>::~View()	16	static
-../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:19:13:Screen1ViewBase::~Screen1ViewBase()	16	static
-../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:19:13:virtual Screen1ViewBase::~Screen1ViewBase()	16	static
+../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:20:13:Screen1ViewBase::~Screen1ViewBase()	16	static
+../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:20:13:virtual Screen1ViewBase::~Screen1ViewBase()	16	static
 ../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:11:13:Screen1View::~Screen1View()	16	static
 ../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:11:13:virtual Screen1View::~Screen1View()	16	static
 ../TouchGFX/gui/src/screen1_screen/Screen1View.cpp:3:1:Screen1View::Screen1View()	16	static

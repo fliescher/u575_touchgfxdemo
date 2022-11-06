@@ -3,6 +3,7 @@
     "Screens": [
       {
         "Name": "Screen1",
+        "OverrideDefaultBufferSize": true,
         "CanvasBufferSize": 3600,
         "Components": [
           {
@@ -102,7 +103,8 @@
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionBlock",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen2"
             }
           }
@@ -110,6 +112,8 @@
       },
       {
         "Name": "Screen2",
+        "OverrideDefaultBufferSize": true,
+        "CanvasBufferSize": 3600,
         "Components": [
           {
             "Type": "Image",

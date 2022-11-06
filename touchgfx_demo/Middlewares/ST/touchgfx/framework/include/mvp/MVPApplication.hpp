@@ -18,7 +18,6 @@
 #ifndef TOUCHGFX_MVPAPPLICATION_HPP
 #define TOUCHGFX_MVPAPPLICATION_HPP
 
-#include <new>
 #include <common/AbstractPartition.hpp>
 #include <mvp/MVPHeap.hpp>
 #include <mvp/Presenter.hpp>

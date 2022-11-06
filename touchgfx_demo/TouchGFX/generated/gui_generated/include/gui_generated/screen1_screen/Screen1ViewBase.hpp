@@ -11,6 +11,7 @@
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/canvas/Shape.hpp>
+#include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {

@@ -62,6 +62,6 @@ void Screen1ViewBase::afterTransition()
 {
     //Screen1to2
     //When screen transition ends change screen to Screen2
-    //Go to Screen2 with block transition
-    application().gotoScreen2ScreenBlockTransition();
+    //Go to Screen2 with screen transition towards East
+    application().gotoScreen2ScreenWipeTransitionEast();
 }

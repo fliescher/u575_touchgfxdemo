@@ -66,7 +66,8 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-void signalVSync_caller(void);
+extern void signalVSync_caller(void);
+
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -74,6 +75,7 @@ void signalVSync_caller(void);
 #define FMC_RESET_GPIO_Port GPIOE
 #define USER_BUTTON_Pin GPIO_PIN_13
 #define USER_BUTTON_GPIO_Port GPIOC
+#define USER_BUTTON_EXTI_IRQn EXTI13_IRQn
 #define SW_RIGHT_Pin GPIO_PIN_8
 #define SW_RIGHT_GPIO_Port GPIOF
 #define SW_RIGHT_EXTI_IRQn EXTI8_IRQn

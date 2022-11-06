@@ -23,7 +23,7 @@
 #include "app_touchgfx.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "main.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -43,7 +43,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-
+TX_TIMER lcd_timer;
 /* USER CODE END PV */
 
 #if (USE_STATIC_ALLOCATION == 1)
@@ -134,7 +134,10 @@ VOID tx_application_define(VOID *first_unused_memory)
       /* USER CODE END  MX_X-CUBE-TOUCHGFX_Init_Error */
     }
     /* USER CODE BEGIN  MX_X-CUBE-TOUCHGFX_Init_Success */
-
+    if(!tx_timer_create(&lcd_timer, "my_lcd_timer", signalVSync_caller, 0x1234, 2, 2, TX_AUTO_ACTIVATE))
+    {
+    	tx_timer_activate(&lcd_timer);
+    }
     /* USER CODE END  MX_X-CUBE-TOUCHGFX_Init_Success */
   }
 #else

@@ -59,11 +59,11 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/BlockTransition.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/WipeTransition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -93,6 +93,7 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Shape.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
  gui/include/gui/screen2_screen/Screen2View.hpp \
  generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
  gui/include/gui/screen2_screen/Screen2Presenter.hpp \
@@ -216,15 +217,15 @@ generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/BlockTransition.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/WipeTransition.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
-
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
 
@@ -283,6 +284,8 @@ gui/include/gui/model/ModelListener.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Shape.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
 
 gui/include/gui/screen2_screen/Screen2View.hpp:
 

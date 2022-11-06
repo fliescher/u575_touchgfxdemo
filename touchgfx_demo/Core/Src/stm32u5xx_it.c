@@ -46,7 +46,7 @@
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN PFP */
-void signalVSync_caller();
+//void signalVSync_caller();
 
 
 /* USER CODE END PFP */
@@ -174,8 +174,23 @@ void EXTI8_IRQHandler(void)
   /* USER CODE END EXTI8_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(SW_RIGHT_Pin);
   /* USER CODE BEGIN EXTI8_IRQn 1 */
-
+HAL_GPIO_TogglePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin);
+//signalVSync_caller();
   /* USER CODE END EXTI8_IRQn 1 */
+}
+
+/**
+  * @brief This function handles EXTI Line13 interrupt.
+  */
+void EXTI13_IRQHandler(void)
+{
+  /* USER CODE BEGIN EXTI13_IRQn 0 */
+
+  /* USER CODE END EXTI13_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(USER_BUTTON_Pin);
+  /* USER CODE BEGIN EXTI13_IRQn 1 */
+
+  /* USER CODE END EXTI13_IRQn 1 */
 }
 
 /**
@@ -202,8 +217,8 @@ void TIM3_IRQHandler(void)
   /* USER CODE END TIM3_IRQn 0 */
   HAL_TIM_IRQHandler(&htim3);
   /* USER CODE BEGIN TIM3_IRQn 1 */
-  HAL_GPIO_TogglePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin);
-signalVSync_caller();
+HAL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
+//signalVSync_caller();
   /* USER CODE END TIM3_IRQn 1 */
 }
 

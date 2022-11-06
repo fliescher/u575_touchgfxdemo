@@ -43,6 +43,8 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/screen2_screen/Screen2ViewBase.
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  generated/images/include/BitmapDatabase.hpp
 
@@ -131,6 +133,10 @@ gui/include/gui/model/ModelListener.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
 

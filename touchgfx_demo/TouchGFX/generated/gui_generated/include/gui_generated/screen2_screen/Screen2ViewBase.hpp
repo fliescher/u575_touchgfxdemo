@@ -9,6 +9,7 @@
 #include <gui/screen2_screen/Screen2Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
 
 class Screen2ViewBase : public touchgfx::View<Screen2Presenter>
 {
@@ -31,6 +32,11 @@ protected:
 
 private:
 
+    /*
+     * Canvas Buffer Size
+     */
+    static const uint16_t CANVAS_BUFFER_SIZE = 3600;
+    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 };
 
 #endif // SCREEN2VIEWBASE_HPP

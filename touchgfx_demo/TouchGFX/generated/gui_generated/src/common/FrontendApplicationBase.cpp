@@ -56,13 +56,13 @@ void FrontendApplicationBase::gotoScreen1ScreenSlideTransitionSouthImpl()
 
 // Screen2
 
-void FrontendApplicationBase::gotoScreen2ScreenBlockTransition()
+void FrontendApplicationBase::gotoScreen2ScreenWipeTransitionEast()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreen2ScreenBlockTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreen2ScreenWipeTransitionEastImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoScreen2ScreenBlockTransitionImpl()
+void FrontendApplicationBase::gotoScreen2ScreenWipeTransitionEastImpl()
 {
-    touchgfx::makeTransition<Screen2View, Screen2Presenter, touchgfx::BlockTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<Screen2View, Screen2Presenter, touchgfx::WipeTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

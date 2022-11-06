@@ -138,11 +138,13 @@ int main(void)
   /* Call PreOsInit function */
   MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
-  if (HAL_TIM_Base_Start_IT(&htim3) != HAL_OK)
+/*
+ *
+   if (HAL_TIM_Base_Start_IT(&htim3) != HAL_OK)
   	      {
   	      	Error_Handler();
   	      }
-
+*/
 
   ST7789V_init();
   ST7789V_SEND_COMMAND(ST7789V_RAMWR);
@@ -867,6 +869,9 @@ static void MX_GPIO_Init(void)
   HAL_NVIC_SetPriority(EXTI8_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI8_IRQn);
 
+  HAL_NVIC_SetPriority(EXTI13_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI13_IRQn);
+
 }
 
 /* USER CODE BEGIN 4 */
@@ -874,7 +879,7 @@ static void MX_GPIO_Init(void)
 void signalVSync_caller(void)
 {
 	HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
-//	touchgfx::OSWrappers::signalVSync();
+	touchgfx::OSWrappers::signalVSync();
 }
 
 /* USER CODE END 4 */
@@ -896,10 +901,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     HAL_IncTick();
   }
   /* USER CODE BEGIN Callback 1 */
-  if(htim == &htim16)
-  {
-	  touchgfx::OSWrappers::signalVSync();
-  }
+
   /* USER CODE END Callback 1 */
 }
 

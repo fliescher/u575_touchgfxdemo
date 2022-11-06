@@ -4,9 +4,13 @@
 #include <gui_generated/screen2_screen/Screen2ViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <BitmapDatabase.hpp>
+#include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
+
 
 Screen2ViewBase::Screen2ViewBase()
 {
+
+    touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
 
     __background.setPosition(0, 0, 240, 320);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));

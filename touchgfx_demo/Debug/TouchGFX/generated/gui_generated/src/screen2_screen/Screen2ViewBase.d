@@ -43,6 +43,8 @@ TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  ../TouchGFX/generated/images/include/BitmapDatabase.hpp
 ../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:
@@ -88,5 +90,7 @@ TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
 ../TouchGFX/generated/images/include/BitmapDatabase.hpp:

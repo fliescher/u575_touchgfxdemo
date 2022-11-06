@@ -28,8 +28,8 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:36:7:virtual touchgfx::Widget::~Widget()	16	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<Screen2Presenter>::~View()	16	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<Screen2Presenter>::~View()	16	static
-../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:17:13:Screen2ViewBase::~Screen2ViewBase()	16	static
-../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:17:13:virtual Screen2ViewBase::~Screen2ViewBase()	16	static
+../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:18:13:Screen2ViewBase::~Screen2ViewBase()	16	static
+../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:18:13:virtual Screen2ViewBase::~Screen2ViewBase()	16	static
 ../TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp:11:13:Screen2View::~Screen2View()	16	static
 ../TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp:11:13:virtual Screen2View::~Screen2View()	16	static
 ../TouchGFX/gui/src/screen2_screen/Screen2View.cpp:3:1:Screen2View::Screen2View()	16	static
