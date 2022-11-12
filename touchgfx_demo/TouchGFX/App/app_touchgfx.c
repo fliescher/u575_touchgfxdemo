@@ -27,6 +27,7 @@
 
 /* Private define ------------------------------------------------------------*/
 #define TOUCHGFX_STACK_SIZE          (4080)
+#define TOUCHGFX_BYTE_POOL_SIZE      (4096)
 
 /* USER CODE BEGIN PD */
 
@@ -38,6 +39,7 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+static TX_BYTE_POOL TouchGFXBytePool;
 static TX_THREAD TouchGFXThread;
 
 /* USER CODE BEGIN PV */
@@ -71,9 +73,16 @@ UINT MX_TouchGFX_Init(VOID *memory_ptr)
   UINT ret = TX_SUCCESS;
   CHAR *pointer = 0;
 
+  /* Create a byte memory pool from which to allocate the thread stacks.  */
+  if (tx_byte_pool_create(&TouchGFXBytePool, (char *)"Byte Pool", memory_ptr,
+                          TOUCHGFX_BYTE_POOL_SIZE) != TX_SUCCESS)
+  {
+    ret = TX_POOL_ERROR;
+  }
+
   /* Allocate the stack for TouchGFX Thread.  */
-  if (tx_byte_allocate((TX_BYTE_POOL*)memory_ptr, (VOID **) &pointer,
-                       TOUCHGFX_STACK_SIZE, TX_NO_WAIT) != TX_SUCCESS)
+  else if (tx_byte_allocate(&TouchGFXBytePool, (VOID **) &pointer,
+                            TOUCHGFX_STACK_SIZE, TX_NO_WAIT) != TX_SUCCESS)
   {
     ret = TX_POOL_ERROR;
   }

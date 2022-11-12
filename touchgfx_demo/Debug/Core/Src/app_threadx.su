@@ -1,2 +1,2 @@
 ../Core/Src/app_threadx.c:60:6:App_ThreadX_Init	24	static
-../Core/Src/app_threadx.c:80:6:MX_ThreadX_Init	8	static
+../Core/Src/app_threadx.c:75:6:MX_ThreadX_Init	8	static
